@@ -1,0 +1,229 @@
+<!-- 1. CSS Units (px, %, rem, vh)
+2. Display: Incline, Block, Blockincline, None.
+3. Positioning
+4. Flex Box (Intro) -->
+
+                       <!-- CSS LAYOUT -->
+<!-- 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS LAYOUT</title>
+    <style>
+      .box1 {
+        width: 200px;
+        height: 100px;
+        background: tomato;
+        margin-bottom: 10px;
+      }
+
+      .box2 {
+        width: 50%;
+        height: 100px;
+        background: aqua;
+        margin-bottom: 10px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .hero {
+        height: 100vh;
+        background-color: lightgreen;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Units Examples</h1>
+    <div class="box1">Width 200px</div>
+    <div class="box2">Width 50%</div>
+    <div class="hero">Height 100vh</div>
+  </body>
+</html> -->
+
+               <!-- Display: Incline, Block, Blockincline, None. -->
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display</title>
+<style> 
+.box {
+    background: orange;
+    padding: 10px;
+    margin: 5px;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 150px;
+}
+
+.none {
+    display: none;
+}
+</style>
+</head>
+<body>
+    <div class="box block">Block Element</div>
+
+    <div class="box inline">Inline 1</div>
+    <div class="box inline">Inline 2</div>
+
+    <br /><br />
+
+    <div class="box inline-block">Inline Block 1</div>
+    <div class="box inline-block">Inline Block 2</div>
+
+    <div class="none">You cannot see me</div>
+</body>
+</body>
+</html> -->
+
+                       <!-- CSS Positioning -->
+<!-- 
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning</title>
+
+    <style>
+      .parent {
+        position: relative;
+        width: 300px;
+        height: 200px;
+        background: lightgray;
+      }
+
+      .child {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 80px;
+        height: 80px;
+        background: red;
+        color: white;
+      }
+
+      .fixed-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: green;
+        color: white;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent"> Parent
+      <div class="child">Absolute</div>
+    </div>
+    <div class="fixed-btn">Help</div>
+  </body>
+</html> -->
+
+                      <!--  Flex Box (Intro) -->
+<!--                         
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Box (Intro)</title>
+  <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            /* justify-content: flex-end; */
+            /* justify-content: flex-start; */
+            /* justify-content:  space-between; */
+            /* justify-content: space-around; */
+            /* justify-content: space-evenly; */
+            background: #ddd;
+            align-items: center;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background: tomato;
+            margin: 10px;
+            color: white;
+            text-align: center;
+            
+        }
+    </style>
+</head>
+<body>
+  <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nav Bar</title>
+</head>
+<body>
+  <style>
+    body {
+        margin: 0;
+        font-family: Arial;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #1e293b;
+        color: white;
+        padding: 15px 20px;
+    }
+
+    .menu {
+        display: flex;
+        gap: 20px;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+  <div class="navbar">
+        <h2>My Website</h2>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Courses</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</body>
+</html>
