@@ -1,0 +1,59 @@
+<!-- 1. CSS?
+2. Type of CSS
+3. CSS Selector
+ i. Element Selector
+ ii. Class Selector
+ iii. ID Selector
+ iv. Universal Selector
+4. Box Model
+5. CaseCady
+6. Specifically 
+7. CSS Units 
+  px, %, rem, vh-->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Basic</title>
+    <style>
+         * {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        color: bisque;
+      }
+    #title{
+            color: brown;
+        }
+
+      p {
+        color: aqua;
+      }
+      .red {
+        color: rgb(78, 225, 87);
+      }
+
+     .box {
+        color: rgb(16, 93, 226);
+        width: 300px;
+        padding: 20px;
+        border: 2px solid black;
+        margin: 20px;
+        background: azure;
+      }
+      .hero {
+        height: 100%;
+        font-size: 2rem;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <h1 id="title">CSS Fundaments</h1>
+    <p>this is para one</p>
+    <p class="red">this is para two</p>
+    <div class="box">Box Model Demo</div>
+    <select class="hero">
+      Full Screen Selection
+    </select>
+  </body>
+</html>
