@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsiveness in Tailwind</title>
+     <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- <div>
+      <p>
+        | Prefix | Screen Size | <br />
+        | ------ | ----------- | <br />
+        | sm | 640px |<br />
+        | md | 768px | <br />
+        | md | 768px | <br />
+        | lg | 1024px |<br />
+        | xl | 1280px |<br />
+        | 2xl | 1536px |<br />
+      </p>
+    </div> -->
+
+    <!-- Changing Heading size -->
+    <h1 class="text-sm md:text-x1l lg:text-x4l">Responsive Heading</h1>
+
+    <!-- Changing color -->
+    <div class="bg-blue-500 md:bg-red-500 lg:bg-pink-500 xlg:bg-yellow-500 p-10">Responsive</div>
+ 
+    <!-- Responsive Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-red-300 p-5">1</div>
+
+        <div class="bg-green-300 p-5">2</div>
+
+        <div class="bg-blue-300 p-5">3</div>
+
+        <div class="bg-yellow-300 p-5">4</div>
+
+        <div class="bg-purple-300 p-5">5</div>
+
+        <div class="bg-pink-300 p-5">6</div>
+    </div>
+  </body>
+</html>
