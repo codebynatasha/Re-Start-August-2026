@@ -67,3 +67,57 @@ const sayHey= function (){
     console.log("sayAoa"); // Cannot access 'sayHey' before initialization
 };
 
+// Function Part 2
+// Normal Function
+function greet(name) {
+    return "Hello " + name;
+}
+
+// Function Expression
+// const greet = function(name) {
+//     return "Hello " + name;
+// };
+
+// Arrow Function
+// const deliveryCharges = (km) => km * 20;
+
+// console.log(deliveryCharges(5));
+// Output: 100
+
+// Single Parameter
+const Square =(n) => {
+    return n * n;
+}
+
+console.log(Square(3));
+
+// Delivery Example 
+const deliveryCharges = (km) => km * 20;
+console.log(deliveryCharges(6));
+
+// Order Example 
+function Order(item, quantity =1) {
+console.log(item, "X", quantity);
+}
+
+Order("Burger", 7);
+Order("Pizza"); 
+
+// Rested Parameter
+const showNumber = (...Numbers) =>{
+    console.log("Number:", Numbers);
+}
+
+showNumber (4, 5, 3)
+showNumber (1, 2, 7)
+
+// Practical Example
+function totalMarks(...marks){
+let total = 0;
+for (let mark of marks){
+    total += mark;
+}
+return total;
+}
+
+console.log(totalMarks(80, 60, 45));
